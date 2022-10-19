@@ -1,0 +1,136 @@
+{% load static %}
+<html>
+<head>
+<title>
+FOOD4U
+</title>
+<link href="{% static 'css/bootstrap.min.css'%}" type ="text/css" rel="stylesheet" />
+<link href="{% static 'css/bootstrap-grid.min.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static 'style.css' %}" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="{% static 'jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- jQuery Library -->
+
+
+<!-- Counts JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+</head>
+<body>
+<script>
+  AOS.init();
+</script>
+
+<div class="container-fluid">
+
+<div class="row text-light fixed-top" id="back">
+<div class="col-md-1">
+</div>
+<div class="col-md-5">
+<nav>
+<ul class="nav">
+<li><a href="/hello/"class="nav-link text-dark"><img width="150px" height="80px" src="../static/image/namelogo.png" class="img-thumb wp-post-image" alt="" /></a></li>
+
+</ul>
+</nav>
+</div>
+
+<div class="col-md-6" id="link">
+<div class="row mt-4 ">
+<div class="col-md-12">
+<nav>
+<ul class="nav">
+    <li><h5><a class="nav-link " href="/hello/">Home</a></h5></li>
+    <li><h5><a class="nav-link" href="/works/">Restaurant</a></h5></li>
+<li><h5><a class="nav-link " href="/need/">FAQ</a></h5></li>
+<li><h5><a href="/blog/"class="nav-link ">Blogs</a></h5></li>
+
+<li><h5><a class="nav-link " href="/good/">Contact</a></h5></li>
+<li><h5><a href="/register/"class="nav-link ">Order Now!</a></h5></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+{% block content %}
+{% endblock %}
+
+
+
+<div class="row bg-dark text-light p-5">
+<div class="col-md-3">
+&emsp;Popular Locations
+<nav>
+<ul class="nav">
+<li><a href="http://127.0.0.1:8000/good/" class="nav-link text-light mx-5">Hisar</a></li>
+<li><a href="http://127.0.0.1:8000/good/" class="nav-link text-light mx-5">Fatehabad</a></li>
+<li><a href="http://127.0.0.1:8000/good/" class="nav-link text-light mx-5">Sirsa</a></li>
+<li><a href="http://127.0.0.1:8000/good/" class="nav-link text-light mx-5">Karnal</a></li>
+<li><a href="http://127.0.0.1:8000/good/" class="nav-link text-light mx-5">Kaithal</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="col-md-3">
+&emsp;&emsp;&emsp;Popular Cuisines
+<nav>
+<ul class="nav">
+<li><a href="http://127.0.0.1:8000/works/" class="nav-link text-light mx-5">Apple Juice</a></li>
+<li><a href="http://127.0.0.1:8000/works/" class="nav-link text-light mx-5">Cheese Burger</a></li>
+<li><a href="http://127.0.0.1:8000/works/" class="nav-link text-light mx-5">Cold Coffee</a></li>
+<li><a href="http://127.0.0.1:8000/works/" class="nav-link text-light mx-5">Hot Dogs</a></li>
+<li><a href="http://127.0.0.1:8000/works/" class="nav-link text-light mx-5">Pizza</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="col-md-3">
+&emsp;&emsp;&emsp;&emsp;Menu
+<nav>
+<ul class="nav">
+<li><a href="/hello/" class="nav-link text-light mx-5">Home</a></li>
+<li><a href="/blog/" class="nav-link text-light mx-5">Blog </a></li>
+<li><a href="/good/" class="nav-link text-light mx-5">Contact</a></li>
+<li><a href="/need/" class="nav-link text-light mx-5">FAQ's</a></li>
+<li><a href="/register/" class="nav-link text-light mx-5">Order Now!</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="col-md-3">
+&emsp;Connect With Us
+<nav>
+<ul class="nav">
+<li class="nav-link text-light ml-5">+91-9306580978</li>
+<li><a href="http://www.gmail.com" class="nav-link text-light ml-5">infofood4u@gmail.com</a></li>
+<li class="nav-link text-light ml-5">Hisar , Haryana</li>
+
+</ul>
+</nav>
+</div>
+
+</div>
+
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row p-5 mt-5" id="backimg3">
+<div class="col-md-12 text-center text-light p-3">
+<h1 class="display-2 mt-5">Contact Us</h1>
+<h3 class="display-5 p-3">A great restaurant website</h3>
+
+</div>
+</div>
+<div class="row p-3 ">
+<div class="col-md-12">
+<h6><a href ="/hello/" class="text-dark" >Home</a> > Contact</h6>
+</div>
+</div>
+
+<div class="row p-5 mb-5 ">
+<div class="col-md-6">
+
+<h2 class="text-center mb-5">GOOGLE MAP</h2>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111497.06572089727!2d75.68549816234781!3d29.156322702879383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391232d8011d0c37%3A0x1d3f0df105af1178!2sHisar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1662363236228!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+
+</div>
+<div class="col-md-6">
+<h2 class="text-center p-3 mb-2">CONTACT THE FOOD4U</h2>
+<div class="row">
+<div class="col-md-6">
+<h5 >&emsp; Call Food4U</h5>
+<h5 >&emsp;+91-9306580978</h5>
+<h3 class="p-3">Get In Touch</h3>
+</div>
+
+<div class="col-md-6">
+<h5>&emsp;Address :</h5>
+<h5 class="mb-5">&emsp;Hisar , Haryana</h5>
+<p class="mt-5">(Please fill all area marked with * )</p>
+</div>
+</div>
+
+
+<form method="post" action="{% url 'feedback' %}">
+{% csrf_token %}
+<div class="row">
+<div class="col-md-6">
+
+<label class="p-3">Name*</label>
+<input type="text" class="form-control" placeholder="enter first name" name="name" required/>
+
+
+</div>
+<div class="col-md-6">
+<label class="p-3" >Email*</label>
+<input type="email" class="form-control" placeholder="@gmail.com" name="email" required/>
+
+</div>
+</div>
+<label class="p-3" >Subject*</label>
+<input type="text" class="form-control" placeholder="Write subject here" name="subject" required/>
+<label class="p-3" >Message </label>
+<textarea class="form-control" placeholder="Write your message here ..." name="message"></textarea>
+<input type="submit" class="p-2 mt-3 btn-primary"/>
+</form>
+
+</div>
+</div>
+<div class="row ">
+<div class="col-md-12">
+</div>
+</div>
+
+{% endblock %}

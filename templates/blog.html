@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row p-5 mt-5 " id="backimg3">
+<h2 class=" display-1 text-center p-5 mt-5 text-light">Blogs</h2>
+<h5 class="text-center text-light">A Great Restaurant Website</h5>
+
+
+
+</div>
+<div class="row">
+<p><a href="/hello/" class="text-dark mt-3">Home</a> -> Blogs</p>
+</div>
+<div class="row p-3 mt-5">
+
+{% for blogs in blg %}
+<div class="col-md-4 p-3 mb-3 border  ">
+<img width="400" height="300" src="/media/{{blogs.image}}"  />
+Posted by Admin on {{blogs.poston}}
+<h3 class="mt-3">{{ blogs.title}}</h3>
+<p class="justify mt-5">{{blogs.des}}
+</p>
+</div>
+
+{% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

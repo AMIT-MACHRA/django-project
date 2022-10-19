@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row p-5">
+</div>
+<div class="row p-5">
+<div class="col-md-6 offset-3">
+
+
+         <form method="post" action="{% url 'orderss' %}">
+		 {% csrf_token %}
+          <h3 class="text-center" id="g1">PLACE YOUR ORDER</h3>
+		 <label class="p-3"><h5 id="g1">First Name*</h5></label>
+         <input type="text" class="form-control" placeholder="enter first name" name="FirstName" required/>         
+        <label class="p-3" ><h5 id="g1">Last Name*</h5></label>
+        <input type="text" class="form-control" placeholder="enter last name" name="LastName" required/>
+		<label class="p-3 " ><h5 id="g1">Gender&emsp;&emsp;</h5></label>
+         Male :&emsp;&emsp; <input type="radio" value="Male" name="Gender"/>&emsp;&emsp;
+		 Female :&emsp;&emsp; <input type="radio"value="Female" name="Gender" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;		 
+		<label class="p-3 " ><h5 id="g1">Email*</h5></label>	
+         <input type="email" class="form-control" placeholder="@gmail.com" name="Email" required/>
+        <label class="p-3" ><h5 id="g1">Phone Number*</h5></label>
+        <input type="digits" class="form-control" placeholder="Phone Number" name="PhoneNumber" required/>
+		<label class="p-3"><h5 id="g1">Address*</h5></label>
+		<textarea class="form-control" placeholder="Address" name="address"  ></textarea>
+		<label class="p-3"><h5 id="g1">Select Your Order*</h5></label>
+		<select name="order" class="form-control" >
+			<option value="">Select Your Order</option>
+			<option> Apple Juice</option>
+			<option> Carrot Juice</option>
+			<option> Cheese Burger</option>
+			<option>Chicken Roast</option>	
+			<option> Chinese Soup</option>
+			<option> Cold Coffee</option>
+			<option> Cold Drink</option>
+			<option>Cupcake</option>
+			<option>Doughnut</option>
+			<option>Drum Stick</option>
+			<option>Egg Fry</option>
+			<option>Fish Fry</option>	
+			<option>Fresh Juice</option>
+			<option> Hot Dogs</option>
+			<option> Ice Cream</option>
+			<option>Maggi</option>
+			<option>Noodles</option>
+			<option>Pastry</option>
+			<option>Pizza</option>
+			<option>Potato Fries</option>	
+			<option>Prawns</option>
+			<option>Champagne</option>
+			<option> Shawarma</option>
+			<option>Soda water</option>
+			<option> Steam Roast</option>
+			<option>Tea</option>
+		</select>
+		
+		<div class="row mt-5">
+		</div>
+
+        <input type="submit" class="btn btn-primary">
+  
+		 </form>
+      </div>
+     
+    </div>
+  
+
+
+
+
+
+
+
+{% endblock %}
